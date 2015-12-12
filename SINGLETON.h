@@ -1,7 +1,7 @@
 #import <Foundation/Foundation.h>
-
+/*头文件中生命函数*/
 #define SINGLETONH(name) + (instancetype)shared##name;
-
+/*执行文件中实现函数*/
 #define SINGLETONM(name)\
 static id _instance;\
 + (instancetype)allocWithZone:(struct _NSZone *)zone\
